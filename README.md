@@ -1,28 +1,39 @@
-# NCPSKY Firmware (public)
+# NCPSKY Firmware Release（公开仓 · 多产品共用）
 
-Public **OTA package** repository for NCPSKY printer products.
-
-- **Not** full application source (that stays in the private `ncpsky-printer-dev` workspace).
-- Layout follows NCPSKY OTA static hosting conventions.
+本仓**只发 OTA 包**，不发完整私有源码。  
+**一种产品一条目录**；多台同型号机器共用同一 `product_id` 通道。
 
 ```text
-ncpsky-ota/
-  manifest.json
-  channels/{stable,beta,dev}.json
-  packages/*.zip|*.bin (+ .sha256)
-catalogs/          # human-readable per-printer notes
+ota/
+  <product_id>/                 # 例：ncpsky-dtmax、未来 ncpsky-xxx
+    channels/{stable,beta,dev}.json
+    packages/*.{zip,bin} + .sha256
+    manifest.json               # 可选；通常 stable 切片
+catalogs/
+  INDEX.md
+  <product_id>.json             # 人类可读基线说明
 ```
 
-## Current baseline (FLSun T1 Max / NCPSKY ▲ DTMax)
+## 已登记产品
 
-| Package | Version | Notes |
-|---------|---------|-------|
-| stack | `2026.11.23.1` | Host Klipper+Moonraker+macros; **KlipperCore 0.14.0** |
-| mcu | `mcu-20261122` | `stm32f103xe`; flash requires on-panel confirm |
-| panel | (ship separately when publishing panel zips) | semver |
+| product_id | 品牌 | firmware_target | 目录 |
+|------------|------|-----------------|------|
+| `ncpsky-dtmax` | NCPSKY ▲ DTMax | FLSun T1 Max | [`ota/ncpsky-dtmax/`](ota/ncpsky-dtmax/) |
 
-`firmware_target` must be `FLSun T1 Max`.
+新增产品：复制 `ota/_template/`（见下）→ `ota/<product_id>/`，并更新本表与 `catalogs/INDEX.md`。
 
-## Consume on device
+## 机上怎么指到本仓
 
-Point `ota/config.json` → this repo’s raw/static URL or a mirror, channel `dev`/`beta`/`stable`.
+```json
+"source": "github",
+"github": {
+  "owner": "Nowebyone",
+  "repo": "NCPSKY-Printer-Firmware-Release",
+  "ref": "main",
+  "mode": "raw",
+  "path_prefix": "ota/<product_id>"
+}
+```
+
+Raw 例：  
+`https://raw.githubusercontent.com/Nowebyone/NCPSKY-Printer-Firmware-Release/main/ota/ncpsky-dtmax/channels/dev.json`
