@@ -1,0 +1,38 @@
+{
+  "product": "NCPSKY ▲ DTMax",
+  "firmware_target": "FLSun T1 Max",
+  "channel": "dev",
+  "published_at": "2026-11-22T19:52:43Z",
+  "min_panel": "0.5.0",
+  "notes": "T1 Max baseline from live printer — KlipperCore 0.14.0 / custom FLSunT1Max-20261122",
+  "klipper_core": "0.14.0",
+  "klipper_custom": "FLSunT1Max-20261122",
+  "packages": [
+    {
+      "id": "stack-2026.11.23.1",
+      "kind": "stack",
+      "version": "2026.11.23.1",
+      "url": "packages/stack-2026.11.23.1.zip",
+      "sha256": "25ad615a7be7281618addb3fb2a8b0f0a69f9ae2bd22618499da7fc69f8472ed",
+      "size": 3659197,
+      "min_free_mb": 400,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "klipper",
+      "notes": "Host stack baseline (KlipperCore 0.14.0)"
+    },
+    {
+      "id": "mcu-20261122",
+      "kind": "mcu",
+      "version": "mcu-20261122",
+      "url": "packages/mcu-20261122.bin",
+      "sha256": "76dada1616e4bcffd34f150de602ce5cfdcbd46e7f2fb84df85e2beb2462b73c",
+      "size": 35672,
+      "min_free_mb": 20,
+      "requires_idle": true,
+      "auto": false,
+      "restart": "mcu_flash",
+      "notes": "MCU image; UI confirm required"
+    }
+  ]
+}
