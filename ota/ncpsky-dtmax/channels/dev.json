@@ -4,57 +4,17 @@
   "channel": "dev",
   "packages": [
     {
-      "id": "system-sys-2026.11.24.2",
-      "kind": "system",
-      "version": "sys-2026.11.24.2",
-      "url": "packages/system-sys-2026.11.24.2.tar.gz",
-      "sha256": "1b6cd8fbe0fab27de0c86b8a1342ee43d4e9fbaf3337b9f495da137fd6cecdc0",
-      "size": 545,
-      "min_free_mb": 300,
-      "requires_idle": true,
-      "auto": true,
-      "restart": "reboot",
-      "notes": "UI full-update test bump (all kinds)"
-    },
-    {
-      "id": "platform-plat-2026.11.24.3",
-      "kind": "platform",
-      "version": "plat-2026.11.24.3",
-      "url": "packages/platform-plat-2026.11.24.3.tar.gz",
-      "sha256": "4c5d780113e52a6f9cd97e0be9f16ac0940d16d95da0dddaca79705a0f4fe94b",
-      "size": 772,
-      "min_free_mb": 200,
-      "requires_idle": true,
-      "auto": true,
-      "restart": "reboot",
-      "notes": "UI full-update test bump (all kinds)"
-    },
-    {
-      "id": "stack-2026.11.24.5",
-      "kind": "stack",
-      "version": "2026.11.24.5",
-      "url": "packages/stack-2026.11.24.5.zip",
-      "sha256": "b99d28611b069ca6d5c8775a4428042c9ef49fa9c78096e905a12269f9ea06e1",
-      "size": 3602035,
-      "min_free_mb": 400,
-      "requires_idle": true,
-      "auto": true,
-      "restart": "klipper",
-      "notes": "UI full-update test bump (all kinds)",
-      "printer_cfg_merge": true
-    },
-    {
-      "id": "panel-0.6.3",
+      "id": "panel-0.6.4",
       "kind": "panel",
-      "version": "0.6.3",
-      "url": "packages/panel-0.6.3.zip",
-      "sha256": "7fd99c7098565dfc3dfe2304658ef4e6f8d2c93d99f92f2afebde576468f4b03",
-      "size": 2245180,
+      "version": "0.6.4",
+      "url": "packages/panel-0.6.4.zip",
+      "sha256": "33ea842fc33936f0af1273abe7cc726dc9d8e785a4a2198832c2106553430f7a",
+      "size": 2246137,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "UI full-update test bump (all kinds)",
+      "notes": "fix MCU flash: no make flash; soft-fail in full OTA; skip identical bin",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -63,22 +23,9 @@
         "ota/history.json",
         "ota/persist_profile.json"
       ]
-    },
-    {
-      "id": "mcu-20261125",
-      "kind": "mcu",
-      "version": "mcu-20261125",
-      "url": "packages/mcu-20261125.bin",
-      "sha256": "76dada1616e4bcffd34f150de602ce5cfdcbd46e7f2fb84df85e2beb2462b73c",
-      "size": 35672,
-      "min_free_mb": 20,
-      "requires_idle": true,
-      "auto": false,
-      "restart": "mcu_flash",
-      "notes": "UI full-update test bump (all kinds)"
     }
   ],
-  "published_at": "2026-11-24T14:15:54Z",
+  "published_at": "2026-11-24T14:22:05Z",
   "min_panel": "0.5.0",
-  "notes": "UI full-update test bump (all kinds)"
+  "notes": "fix MCU flash: no make flash; soft-fail in full OTA; skip identical bin"
 }
