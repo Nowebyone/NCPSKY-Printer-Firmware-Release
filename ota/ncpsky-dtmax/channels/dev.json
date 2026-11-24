@@ -30,11 +30,11 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.8",
+      "id": "stack-2026.11.25.9",
       "kind": "stack",
-      "version": "2026.11.25.8",
-      "url": "packages/stack-2026.11.25.8.zip",
-      "sha256": "2687ee06863915761af6fac9d90880fea4396a45c0ecb9487ff59a022936a4c2",
+      "version": "2026.11.25.9",
+      "url": "packages/stack-2026.11.25.9.zip",
+      "sha256": "747f3144511793493636bc6724f079f9e601742a6d810aa1becb164877003112",
       "size": 3613810,
       "min_free_mb": 400,
       "requires_idle": true,
@@ -78,7 +78,7 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T16:37:37Z",
+  "published_at": "2026-11-24T16:44:01Z",
   "min_panel": "0.5.0",
   "notes": "On-screen bed_level_1/2 use 500 mm/s travel. Removed M204 S200."
 }
