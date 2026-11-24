@@ -30,17 +30,17 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.7",
+      "id": "stack-2026.11.25.8",
       "kind": "stack",
-      "version": "2026.11.25.7",
-      "url": "packages/stack-2026.11.25.7.zip",
-      "sha256": "094e1c2e12e36d043cb0f037ab37e157d8dbebe72169eea2605c0a91c4b65452",
-      "size": 3613811,
+      "version": "2026.11.25.8",
+      "url": "packages/stack-2026.11.25.8.zip",
+      "sha256": "2687ee06863915761af6fac9d90880fea4396a45c0ecb9487ff59a022936a4c2",
+      "size": 3613810,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Tilt calibrate adjusts endstops only. Input shaper sweep is 5-133 Hz and its print accel cap is saved.",
+      "notes": "On-screen bed_level_1/2 use 500 mm/s travel. Removed M204 S200.",
       "printer_cfg_merge": true
     },
     {
@@ -78,7 +78,7 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T16:35:50Z",
+  "published_at": "2026-11-24T16:37:37Z",
   "min_panel": "0.5.0",
-  "notes": "Tilt calibrate adjusts endstops only. Input shaper sweep is 5-133 Hz and its print accel cap is saved."
+  "notes": "On-screen bed_level_1/2 use 500 mm/s travel. Removed M204 S200."
 }
