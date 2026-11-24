@@ -3,61 +3,91 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.2",
+      "id": "system-sys-2026.11.24.3",
+      "kind": "system",
+      "version": "sys-2026.11.24.3",
+      "url": "packages/system-sys-2026.11.24.3.tar.gz",
+      "sha256": "acd8ad3f3842fb6300a3ae2fd3f7b52612ce1975b4a4515ee49dcddd8e53e579",
+      "size": 542,
+      "min_free_mb": 300,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "reboot",
+      "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
+    },
+    {
+      "id": "platform-plat-2026.11.24.4",
+      "kind": "platform",
+      "version": "plat-2026.11.24.4",
+      "url": "packages/platform-plat-2026.11.24.4.tar.gz",
+      "sha256": "b21f98f8c7bec9d4d1b2f0285bdbbc1550dfc04d20207ef1a639cccb3da2d701",
+      "size": 768,
+      "min_free_mb": 200,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "reboot",
+      "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
+    },
+    {
+      "id": "stack-2026.11.25.22",
+      "kind": "stack",
+      "version": "2026.11.25.22",
+      "url": "packages/stack-2026.11.25.22.zip",
+      "sha256": "013fca9ad54d5bdd76237c672333e756f44d67ef31c648d0471e9349743aebf3",
+      "size": 3618820,
+      "min_free_mb": 400,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "klipper",
+      "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
+      "printer_cfg_replace": false,
+      "printer_cfg_merge": true
+    },
+    {
+      "id": "panel-0.7.17",
       "kind": "panel",
-      "version": "0.5.2",
-      "url": "packages/panel-0.5.2.zip",
-      "sha256": "4129ce1bf0e1c46d77cd98c9f9d3002cd6935ac38c76e979eef04c63cd74a3d9",
-      "size": 2223511,
+      "version": "0.7.17",
+      "url": "packages/panel-0.7.17.zip",
+      "sha256": "57208e6dc3d76c308b98a83855de518687961e03ba890dd8174ac256e0420ff1",
+      "size": 2403699,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录",
+      "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
         "ota/backup/**",
         "ota/versions.json",
-        "ota/history.json"
+        "ota/history.json",
+        "ota/persist_profile.json"
       ]
     },
     {
-      "id": "stack-2026.11.24.2",
-      "kind": "stack",
-      "version": "2026.11.24.2",
-      "url": "packages/stack-2026.11.24.2.zip",
-      "sha256": "b64e1dcc595714ba8b4ec4d0f540b707157b2107f1f707709a1595abdaa17bdb",
-      "size": 3588465,
-      "min_free_mb": 400,
-      "requires_idle": true,
-      "auto": true,
-      "restart": "klipper",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
-    },
-    {
-      "id": "mcu-20261122",
+      "id": "mcu-20261125",
       "kind": "mcu",
-      "version": "mcu-20261122",
-      "url": "packages/mcu-20261122.bin",
-      "sha256": "76dada1616e4bcffd34f150de602ce5cfdcbd46e7f2fb84df85e2beb2462b73c",
-      "size": 35672,
+      "version": "mcu-20261125",
+      "url": "packages/mcu-20261125.tar.gz",
+      "sha256": "25c5229822eb2b3ee025333a57c95582d46072f0d4cfc25cf02c6ddc8dcd1255",
+      "size": 2216,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
+      "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles."
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T12:39:42Z",
+  "published_at": "2026-11-24T19:45:41Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录",
+  "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles.",
   "product_id": "ncpsky-dtmax",
   "printers": [
     "flsun-t1-max"
   ],
   "ota_path": "ota/ncpsky-dtmax",
   "klipper_core": "0.14.0",
-  "klipper_custom": "FLSunT1Max-20261122"
+  "klipper_custom": "FLSunT1Max-20261122",
+  "version": "0.7.17"
 }

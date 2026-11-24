@@ -49,13 +49,13 @@
       "kind": "panel",
       "version": "0.7.17",
       "url": "packages/panel-0.7.17.zip",
-      "sha256": "33924c05d2b58ad4d979a0a4586db6305332b50eb3dcb9d614ef07d914423374",
-      "size": 2391973,
+      "sha256": "57208e6dc3d76c308b98a83855de518687961e03ba890dd8174ac256e0420ff1",
+      "size": 2403699,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
+      "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -64,10 +64,23 @@
         "ota/history.json",
         "ota/persist_profile.json"
       ]
+    },
+    {
+      "id": "mcu-20261125",
+      "kind": "mcu",
+      "version": "mcu-20261125",
+      "url": "packages/mcu-20261125.tar.gz",
+      "sha256": "25c5229822eb2b3ee025333a57c95582d46072f0d4cfc25cf02c6ddc8dcd1255",
+      "size": 2216,
+      "min_free_mb": 20,
+      "requires_idle": true,
+      "auto": false,
+      "restart": "mcu_flash",
+      "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles."
     }
   ],
-  "published_at": "2026-11-24T19:05:15Z",
+  "published_at": "2026-11-24T19:45:41Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
+  "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles.",
   "version": "0.7.17"
 }
