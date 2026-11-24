@@ -13,7 +13,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
+      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg"
     },
     {
       "id": "platform-plat-2026.11.24.4",
@@ -26,35 +26,35 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
+      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg"
     },
     {
-      "id": "stack-2026.11.25.22",
+      "id": "stack-2026.11.25.24",
       "kind": "stack",
-      "version": "2026.11.25.22",
-      "url": "packages/stack-2026.11.25.22.zip",
-      "sha256": "013fca9ad54d5bdd76237c672333e756f44d67ef31c648d0471e9349743aebf3",
-      "size": 3618820,
+      "version": "2026.11.25.24",
+      "url": "packages/stack-2026.11.25.24.zip",
+      "sha256": "7d2d4748b6f674f128678dc87eef7d7db5646c02a3b2ae05e3f1538dd6001453",
+      "size": 3557516,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
+      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.17",
+      "id": "panel-0.7.18",
       "kind": "panel",
-      "version": "0.7.17",
-      "url": "packages/panel-0.7.17.zip",
-      "sha256": "57208e6dc3d76c308b98a83855de518687961e03ba890dd8174ac256e0420ff1",
-      "size": 2403699,
+      "version": "0.7.18",
+      "url": "packages/panel-0.7.18.zip",
+      "sha256": "77a6db46f6975fa2e808c90193fc862cc2ffa156b970c2aabb4410148b919cdf",
+      "size": 2408530,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles.",
+      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -75,19 +75,12 @@
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles."
+      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg"
     }
   ],
-  "channel": "dev",
-  "published_at": "2026-11-24T19:45:41Z",
+  "published_at": "2026-11-24T21:26:38Z",
   "min_panel": "0.5.0",
-  "notes": "MCU detect+on-device build (GD32F303VET6). Panel includes mcu_profiles.",
-  "product_id": "ncpsky-dtmax",
-  "printers": [
-    "flsun-t1-max"
-  ],
-  "ota_path": "ota/ncpsky-dtmax",
-  "klipper_core": "0.14.0",
-  "klipper_custom": "FLSunT1Max-20261122",
-  "version": "0.7.17"
+  "version": "0.7.18",
+  "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg",
+  "channel": "catalog"
 }
