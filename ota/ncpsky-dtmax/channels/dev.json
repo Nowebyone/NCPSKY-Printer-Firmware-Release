@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.7",
+      "id": "panel-0.5.8",
       "kind": "panel",
-      "version": "0.5.7",
-      "url": "packages/panel-0.5.7.zip",
-      "sha256": "8bc4eb7d488a33ef32d06992a769f809890ee123906f54c65b9569dfca310b40",
-      "size": 2226944,
+      "version": "0.5.8",
+      "url": "packages/panel-0.5.8.zip",
+      "sha256": "969cfdbe3d86c385a8969accba683b9f23d6e87e03d835ce6d7e497baf0a569e",
+      "size": 2227310,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.7（开发）\n- 噪音曲线：三立柱方向各测一次；速度 50–800 mm/s\n- OTA 安装后保护 c_helper，避免 Klipper 离线\n- 含校准 toC 文案与 bash 安全启动",
+      "notes": "panel 0.5.8（开发）\n- 更新页明确显示当前版本与发布版（稳定/测试/开发）\n- 更新弹窗展示当前版本·发布版 → 可更新至\n- 含 0.5.7：噪音曲线三立柱 / 50–800、c_helper 保护",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T13:18:28Z",
+  "published_at": "2026-11-24T13:22:32Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.7（开发）\n- 噪音曲线：三立柱方向各测一次；速度 50–800 mm/s\n- OTA 安装后保护 c_helper，避免 Klipper 离线\n- 含校准 toC 文案与 bash 安全启动"
+  "notes": "panel 0.5.8（开发）\n- 更新页明确显示当前版本与发布版（稳定/测试/开发）\n- 更新弹窗展示当前版本·发布版 → 可更新至\n- 含 0.5.7：噪音曲线三立柱 / 50–800、c_helper 保护"
 }
