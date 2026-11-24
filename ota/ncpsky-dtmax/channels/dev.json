@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.5",
+      "id": "panel-0.5.6",
       "kind": "panel",
-      "version": "0.5.5",
-      "url": "packages/panel-0.5.5.zip",
-      "sha256": "229891a02eae43d95a4f31823314042e7f0d7b24f7fe771a480447ef5ad2ee95",
-      "size": 2226472,
+      "version": "0.5.6",
+      "url": "packages/panel-0.5.6.zip",
+      "sha256": "36420d7da1f7a41bcf74c0b936f1e174cacf51bb31fa444f61d7ba214f474739",
+      "size": 2226327,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.5（开发）\n- startboot 改为 bash 调用 run_panel，丢失 +x 不再卡启动页\n- OTA 安装后强制 chmod + 重写 startboot\n- 含 0.5.3 UI 优化",
+      "notes": "panel 0.5.6（开发）\n- 校准三项说明改为 toC：解决什么问题 + 大约多久\n- 校准过程状态文案去掉技术细节\n- 含 0.5.5：OTA 后 bash 安全启动，避免卡启动页",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T13:04:49Z",
+  "published_at": "2026-11-24T13:09:22Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.5（开发）\n- startboot 改为 bash 调用 run_panel，丢失 +x 不再卡启动页\n- OTA 安装后强制 chmod + 重写 startboot\n- 含 0.5.3 UI 优化"
+  "notes": "panel 0.5.6（开发）\n- 校准三项说明改为 toC：解决什么问题 + 大约多久\n- 校准过程状态文案去掉技术细节\n- 含 0.5.5：OTA 后 bash 安全启动，避免卡启动页"
 }
