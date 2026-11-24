@@ -44,17 +44,17 @@
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.6.5",
+      "id": "panel-0.6.6",
       "kind": "panel",
-      "version": "0.6.5",
-      "url": "packages/panel-0.6.5.zip",
-      "sha256": "2b35a9612794da297397ab7ea05fef7eb489cd68cc4e0cba8ccdc2152bac8fa9",
-      "size": 2246138,
+      "version": "0.6.6",
+      "url": "packages/panel-0.6.6.zip",
+      "sha256": "fe4e372877737d534c622ba2e6271cd92b72cbb0c23bbb8c7ae8951cbcbf0886",
+      "size": 2369533,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag",
+      "notes": "Panel 0.6.6. On-screen bed leveling travel is 500 mm/s.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -78,7 +78,7 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T16:44:01Z",
+  "published_at": "2026-11-24T16:53:10Z",
   "min_panel": "0.5.0",
-  "notes": "On-screen bed_level_1/2 use 500 mm/s travel. Removed M204 S200."
+  "notes": "Panel 0.6.6. On-screen bed leveling travel is 500 mm/s."
 }
