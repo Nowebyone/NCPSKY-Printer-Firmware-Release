@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.11",
+      "id": "stack-2026.11.25.12",
       "kind": "stack",
-      "version": "2026.11.25.11",
-      "url": "packages/stack-2026.11.25.11.zip",
-      "sha256": "960625cf1f8cd544ca09782399ef9777ed321bae7771f865d6b2fcdb2ea9630e",
-      "size": 3614182,
+      "version": "2026.11.25.12",
+      "url": "packages/stack-2026.11.25.12.zip",
+      "sha256": "312dc60f57361fb69a2ca1ade3b6e547e275db8d3cbd8eaf671ed0fa05025a96",
+      "size": 3614381,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.2. Klipper starts again: bed mesh command help was missing. Calibration is still kept.",
+      "notes": "Firmware 0.7.4. Log tools run on Python 3. Klipper log shows the stack version instead of a question mark.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.3",
+      "id": "panel-0.7.4",
       "kind": "panel",
-      "version": "0.7.3",
-      "url": "packages/panel-0.7.3.zip",
-      "sha256": "e3df4f8e24c416568d8c43c0b5af7d1f0fc884363fd8dac606e35585101a55e0",
-      "size": 2386109,
+      "version": "0.7.4",
+      "url": "packages/panel-0.7.4.zip",
+      "sha256": "5aa3489b592821ee43d23ae7c07838c9527e22ecfe671e309ab16eef55634484",
+      "size": 2386107,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.3. One-tap update does not flash the MCU. GitHub downloads retry after a dropped connection.",
+      "notes": "Firmware 0.7.4. Log tools run on Python 3. Klipper log shows the stack version instead of a question mark.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T17:19:05Z",
+  "published_at": "2026-11-24T17:26:18Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.3. One-tap update does not flash the MCU. GitHub downloads retry after a dropped connection.",
-  "version": "0.7.3"
+  "notes": "Firmware 0.7.4. Log tools run on Python 3. Klipper log shows the stack version instead of a question mark.",
+  "version": "0.7.4"
 }
