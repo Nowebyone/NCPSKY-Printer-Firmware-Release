@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.18",
+      "id": "stack-2026.11.25.19",
       "kind": "stack",
-      "version": "2026.11.25.18",
-      "url": "packages/stack-2026.11.25.18.zip",
-      "sha256": "529c9b7d990e224fd952e156b6ea1036814df5dec9a7a396432b5f22eb4c1ee0",
-      "size": 3618793,
+      "version": "2026.11.25.19",
+      "url": "packages/stack-2026.11.25.19.zip",
+      "sha256": "52f5772c9b4ff6bdfbca70cef0132777ab95ca0f25cb8c37b59999fd4107c427",
+      "size": 3618893,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.13. Local mesh updates only the probed area of the saved mesh. After the purge line the nozzle lifts to 10mm and travels to the model start.",
+      "notes": "Firmware 0.7.14. Restore tower current to 1.65A after homing so prints no longer lose steps.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.13",
+      "id": "panel-0.7.14",
       "kind": "panel",
-      "version": "0.7.13",
-      "url": "packages/panel-0.7.13.zip",
-      "sha256": "1026b1cad201bd6fb09e952afb26417598f3cb301e7f47eefd57c54b40b16305",
-      "size": 2391823,
+      "version": "0.7.14",
+      "url": "packages/panel-0.7.14.zip",
+      "sha256": "aa5366dbe2f7133b4461db28f9dfdf8320184ba5379a21c3c02ceaba78e6ee83",
+      "size": 2391919,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.13. Local mesh updates only the probed area of the saved mesh. After the purge line the nozzle lifts to 10mm and travels to the model start.",
+      "notes": "Firmware 0.7.14. Restore tower current to 1.65A after homing so prints no longer lose steps.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T18:17:37Z",
+  "published_at": "2026-11-24T18:26:26Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.13. Local mesh updates only the probed area of the saved mesh. After the purge line the nozzle lifts to 10mm and travels to the model start.",
-  "version": "0.7.13"
+  "notes": "Firmware 0.7.14. Restore tower current to 1.65A after homing so prints no longer lose steps.",
+  "version": "0.7.14"
 }
