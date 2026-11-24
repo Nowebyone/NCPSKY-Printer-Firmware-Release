@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.16",
+      "id": "stack-2026.11.25.17",
       "kind": "stack",
-      "version": "2026.11.25.16",
-      "url": "packages/stack-2026.11.25.16.zip",
-      "sha256": "c94bb5b7f623682cfa87ae964416c4128925a5b9bd583d7f4b207dcfa18c9698",
-      "size": 3614793,
+      "version": "2026.11.25.17",
+      "url": "packages/stack-2026.11.25.17.zip",
+      "sha256": "3ee7d9c2739414a542789d594696e721e462c78758f14d207c184f35ea838223",
+      "size": 3615096,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.11. Print prep shows TMC Autotune motor check, then nozzle and bed temperature wait.",
+      "notes": "Firmware 0.7.12. Bed leveling shows homing, motor check, temperature wait, then the mesh itself.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.11",
+      "id": "panel-0.7.12",
       "kind": "panel",
-      "version": "0.7.11",
-      "url": "packages/panel-0.7.11.zip",
-      "sha256": "651407234f511b8e213dfbe169ef1dcf2907e410ba4fea7b71aef12f1a57ec32",
-      "size": 2388696,
+      "version": "0.7.12",
+      "url": "packages/panel-0.7.12.zip",
+      "sha256": "ce66e150607838b5a1cc6883db202c39dba5f13261a9a5bec845a6c5142ed14b",
+      "size": 2389375,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.11. Print prep shows TMC Autotune motor check, then nozzle and bed temperature wait.",
+      "notes": "Firmware 0.7.12. Bed leveling shows homing, motor check, temperature wait, then the mesh itself.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T18:09:04Z",
+  "published_at": "2026-11-24T18:11:58Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.11. Print prep shows TMC Autotune motor check, then nozzle and bed temperature wait.",
-  "version": "0.7.11"
+  "notes": "Firmware 0.7.12. Bed leveling shows homing, motor check, temperature wait, then the mesh itself.",
+  "version": "0.7.12"
 }
