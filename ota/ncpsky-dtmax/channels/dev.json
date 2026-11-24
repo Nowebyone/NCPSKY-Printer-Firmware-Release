@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.19",
+      "id": "stack-2026.11.25.20",
       "kind": "stack",
-      "version": "2026.11.25.19",
-      "url": "packages/stack-2026.11.25.19.zip",
-      "sha256": "52f5772c9b4ff6bdfbca70cef0132777ab95ca0f25cb8c37b59999fd4107c427",
-      "size": 3618893,
+      "version": "2026.11.25.20",
+      "url": "packages/stack-2026.11.25.20.zip",
+      "sha256": "e43c679c2d966c773ca29fd78df045bee1bccab44bd6b121df73a2860a2c369c",
+      "size": 3618917,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.14. Restore tower current to 1.65A after homing so prints no longer lose steps.",
+      "notes": "Firmware 0.7.15. Print towers stay in SpreadCycle at 1.65A. StealthChop below 141 mm/s was losing steps.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.14",
+      "id": "panel-0.7.15",
       "kind": "panel",
-      "version": "0.7.14",
-      "url": "packages/panel-0.7.14.zip",
-      "sha256": "aa5366dbe2f7133b4461db28f9dfdf8320184ba5379a21c3c02ceaba78e6ee83",
-      "size": 2391919,
+      "version": "0.7.15",
+      "url": "packages/panel-0.7.15.zip",
+      "sha256": "68fb0f07310e79834e13e0410bc33a37bf054847953b7425170c9191d239b031",
+      "size": 2391942,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.14. Restore tower current to 1.65A after homing so prints no longer lose steps.",
+      "notes": "Firmware 0.7.15. Print towers stay in SpreadCycle at 1.65A. StealthChop below 141 mm/s was losing steps.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T18:26:26Z",
+  "published_at": "2026-11-24T18:57:11Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.14. Restore tower current to 1.65A after homing so prints no longer lose steps.",
-  "version": "0.7.14"
+  "notes": "Firmware 0.7.15. Print towers stay in SpreadCycle at 1.65A. StealthChop below 141 mm/s was losing steps.",
+  "version": "0.7.15"
 }
