@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.6",
+      "id": "panel-0.5.7",
       "kind": "panel",
-      "version": "0.5.6",
-      "url": "packages/panel-0.5.6.zip",
-      "sha256": "36420d7da1f7a41bcf74c0b936f1e174cacf51bb31fa444f61d7ba214f474739",
-      "size": 2226327,
+      "version": "0.5.7",
+      "url": "packages/panel-0.5.7.zip",
+      "sha256": "8bc4eb7d488a33ef32d06992a769f809890ee123906f54c65b9569dfca310b40",
+      "size": 2226944,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.6（开发）\n- 校准三项说明改为 toC：解决什么问题 + 大约多久\n- 校准过程状态文案去掉技术细节\n- 含 0.5.5：OTA 后 bash 安全启动，避免卡启动页",
+      "notes": "panel 0.5.7（开发）\n- 噪音曲线：三立柱方向各测一次；速度 50–800 mm/s\n- OTA 安装后保护 c_helper，避免 Klipper 离线\n- 含校准 toC 文案与 bash 安全启动",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T13:09:22Z",
+  "published_at": "2026-11-24T13:18:28Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.6（开发）\n- 校准三项说明改为 toC：解决什么问题 + 大约多久\n- 校准过程状态文案去掉技术细节\n- 含 0.5.5：OTA 后 bash 安全启动，避免卡启动页"
+  "notes": "panel 0.5.7（开发）\n- 噪音曲线：三立柱方向各测一次；速度 50–800 mm/s\n- OTA 安装后保护 c_helper，避免 Klipper 离线\n- 含校准 toC 文案与 bash 安全启动"
 }
