@@ -65,20 +65,20 @@
       ]
     },
     {
-      "id": "mcu-20261128",
+      "id": "mcu-20261129",
       "kind": "mcu",
-      "version": "mcu-20261128",
-      "url": "packages/mcu-20261128.bin",
-      "sha256": "ce4e1bd528deee984ddebab2590f712a94c50e9a413cd357a660bc5c45087c1c",
-      "size": 35676,
+      "version": "mcu-20261129",
+      "url": "packages/mcu-20261129.bin",
+      "sha256": "f2f795b72969f2dc948f3f83947fe98ee60b50d1424f4aed60968254cc344f0d",
+      "size": 40972,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
+      "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T14:32:35Z",
+  "published_at": "2026-11-24T14:42:42Z",
   "min_panel": "0.5.0",
-  "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
+  "notes": "Windows native cross-build (STM32CubeCLT)"
 }
