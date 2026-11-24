@@ -30,17 +30,17 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.10",
+      "id": "stack-2026.11.25.11",
       "kind": "stack",
-      "version": "2026.11.25.10",
-      "url": "packages/stack-2026.11.25.10.zip",
-      "sha256": "b4333c9f3b15d236d395ac3ecc2cb322893e8ba89f0c57eca7f0eb2bdd2aad7d",
-      "size": 3614156,
+      "version": "2026.11.25.11",
+      "url": "packages/stack-2026.11.25.11.zip",
+      "sha256": "960625cf1f8cd544ca09782399ef9777ed321bae7771f865d6b2fcdb2ea9630e",
+      "size": 3614182,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware body replaces hand edits. Bed mesh and auto-calibration in SAVE_CONFIG are kept.",
+      "notes": "Firmware 0.7.2. Klipper starts again: bed mesh command help was missing. Calibration is still kept.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
@@ -79,8 +79,8 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T17:03:55Z",
+  "published_at": "2026-11-24T17:15:04Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.1. Hand edits such as motor current return to firmware defaults. Bed mesh and auto-calibration are kept.",
-  "version": "0.7.1"
+  "notes": "Firmware 0.7.2. Klipper starts again: bed mesh command help was missing. Calibration is still kept.",
+  "version": "0.7.2"
 }
