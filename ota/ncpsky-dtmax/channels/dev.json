@@ -14,7 +14,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
+      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
     },
     {
       "id": "platform-plat-2026.11.24.2",
@@ -27,7 +27,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
+      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
     },
     {
       "id": "stack-2026.11.24.4",
@@ -40,21 +40,21 @@
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu",
+      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge",
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.6.0",
+      "id": "panel-0.6.1",
       "kind": "panel",
-      "version": "0.6.0",
-      "url": "packages/panel-0.6.0.zip",
-      "sha256": "52b96f1c9a3c74d777a98b1c7e08ad65984263a6a2d84167bb33a6710b91f360",
-      "size": 2244762,
+      "version": "0.6.1",
+      "url": "packages/panel-0.6.1.zip",
+      "sha256": "0d220ce0c66eaf8906b01c8841d59f5ec386cb964353baad06920dd96c5b64cc",
+      "size": 2245060,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu",
+      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -75,10 +75,10 @@
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
+      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
     }
   ],
-  "published_at": "2026-11-24T13:55:17Z",
+  "published_at": "2026-11-24T14:00:06Z",
   "min_panel": "0.5.0",
-  "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
+  "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
 }
