@@ -1,56 +1,84 @@
 {
   "product": "NCPSKY ▲ DTMax",
   "firmware_target": "FLSun T1 Max",
+  "channel": "dev",
   "packages": [
     {
-      "id": "panel-0.5.9",
+      "id": "system-sys-2026.11.24.1",
+      "kind": "system",
+      "version": "sys-2026.11.24.1",
+      "url": "packages/system-sys-2026.11.24.1.tar.gz",
+      "sha256": "7843c5446d4b93236ddc161c7e4b9761c9b60ca3412074eba1cfaf50b03052c9",
+      "size": 544,
+      "min_free_mb": 300,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "reboot",
+      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
+    },
+    {
+      "id": "platform-plat-2026.11.24.2",
+      "kind": "platform",
+      "version": "plat-2026.11.24.2",
+      "url": "packages/platform-plat-2026.11.24.2.tar.gz",
+      "sha256": "38aba00e7cc40782161c314d84f5d0d38c44704730ccb22bee7fdea2628e7c10",
+      "size": 763,
+      "min_free_mb": 200,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "reboot",
+      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
+    },
+    {
+      "id": "stack-2026.11.24.4",
+      "kind": "stack",
+      "version": "2026.11.24.4",
+      "url": "packages/stack-2026.11.24.4.zip",
+      "sha256": "b99d28611b069ca6d5c8775a4428042c9ef49fa9c78096e905a12269f9ea06e1",
+      "size": 3602035,
+      "min_free_mb": 400,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "klipper",
+      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu",
+      "printer_cfg_merge": true
+    },
+    {
+      "id": "panel-0.6.0",
       "kind": "panel",
-      "version": "0.5.9",
-      "url": "packages/panel-0.5.9.zip",
-      "sha256": "139f9e59c7e7411f4f3a8719fc4806c94b148b715339550fbac5b8f65ff21c2c",
-      "size": 2229036,
+      "version": "0.6.0",
+      "url": "packages/panel-0.6.0.zip",
+      "sha256": "52b96f1c9a3c74d777a98b1c7e08ad65984263a6a2d84167bb33a6710b91f360",
+      "size": 2244762,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.9（开发）\n- 修复更新页按钮下方杂色点（Tab 裁切/滚动残留）\n- 冷启动/重启后自动重连 Wi‑Fi，并在已启用时代理重启 sing-box\n- 含 0.5.8：版本与发布版展示",
+      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
         "ota/backup/**",
         "ota/versions.json",
-        "ota/history.json"
+        "ota/history.json",
+        "ota/persist_profile.json"
       ]
     },
     {
-      "id": "stack-2026.11.24.2",
-      "kind": "stack",
-      "version": "2026.11.24.2",
-      "url": "packages/stack-2026.11.24.2.zip",
-      "sha256": "b64e1dcc595714ba8b4ec4d0f540b707157b2107f1f707709a1595abdaa17bdb",
-      "size": 3588465,
-      "min_free_mb": 400,
-      "requires_idle": true,
-      "auto": true,
-      "restart": "klipper",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
-    },
-    {
-      "id": "mcu-20261122",
+      "id": "mcu-20261124",
       "kind": "mcu",
-      "version": "mcu-20261122",
-      "url": "packages/mcu-20261122.bin",
+      "version": "mcu-20261124",
+      "url": "packages/mcu-20261124.bin",
       "sha256": "76dada1616e4bcffd34f150de602ce5cfdcbd46e7f2fb84df85e2beb2462b73c",
       "size": 35672,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
+      "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
     }
   ],
-  "channel": "dev",
-  "published_at": "2026-11-24T13:34:09Z",
+  "published_at": "2026-11-24T13:55:17Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.9（开发）\n- 修复更新页按钮下方杂色点（Tab 裁切/滚动残留）\n- 冷启动/重启后自动重连 Wi‑Fi，并在已启用时代理重启 sing-box\n- 含 0.5.8：版本与发布版展示"
+  "notes": "Full-coverage OTA: system/platform/stack(cfg merge)/panel/mcu"
 }
