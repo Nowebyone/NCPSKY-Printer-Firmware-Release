@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.20",
+      "id": "stack-2026.11.25.21",
       "kind": "stack",
-      "version": "2026.11.25.20",
-      "url": "packages/stack-2026.11.25.20.zip",
-      "sha256": "e43c679c2d966c773ca29fd78df045bee1bccab44bd6b121df73a2860a2c369c",
-      "size": 3618917,
+      "version": "2026.11.25.21",
+      "url": "packages/stack-2026.11.25.21.zip",
+      "sha256": "c74499f162b2ca39ded2c15ca04b5632f4651b6525dd12ad58ce8b1f20f66338",
+      "size": 3618973,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.15. Print towers stay in SpreadCycle at 1.65A. StealthChop below 141 mm/s was losing steps.",
+      "notes": "Firmware 0.7.16. Towers use StealthChop below the autoswitch speed and SpreadCycle above it, at 1.65A with CoolStep off.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.15",
+      "id": "panel-0.7.16",
       "kind": "panel",
-      "version": "0.7.15",
-      "url": "packages/panel-0.7.15.zip",
-      "sha256": "68fb0f07310e79834e13e0410bc33a37bf054847953b7425170c9191d239b031",
-      "size": 2391942,
+      "version": "0.7.16",
+      "url": "packages/panel-0.7.16.zip",
+      "sha256": "59700a2850555a2ac26daddcfb0ccf9fcc059b370b2bbfbebe9cf8c972fe00c3",
+      "size": 2391987,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.15. Print towers stay in SpreadCycle at 1.65A. StealthChop below 141 mm/s was losing steps.",
+      "notes": "Firmware 0.7.16. Towers use StealthChop below the autoswitch speed and SpreadCycle above it, at 1.65A with CoolStep off.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T18:57:11Z",
+  "published_at": "2026-11-24T19:01:27Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.15. Print towers stay in SpreadCycle at 1.65A. StealthChop below 141 mm/s was losing steps.",
-  "version": "0.7.15"
+  "notes": "Firmware 0.7.16. Towers use StealthChop below the autoswitch speed and SpreadCycle above it, at 1.65A with CoolStep off.",
+  "version": "0.7.16"
 }
