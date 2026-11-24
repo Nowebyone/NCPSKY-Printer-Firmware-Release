@@ -45,17 +45,17 @@
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.4",
+      "id": "panel-0.7.5",
       "kind": "panel",
-      "version": "0.7.4",
-      "url": "packages/panel-0.7.4.zip",
-      "sha256": "5aa3489b592821ee43d23ae7c07838c9527e22ecfe671e309ab16eef55634484",
-      "size": 2386107,
+      "version": "0.7.5",
+      "url": "packages/panel-0.7.5.zip",
+      "sha256": "52ae980b40d60d11e2dbf6799d8807c64ab26486b3493f9571dee0b55653e209",
+      "size": 2386319,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.4. Log tools run on Python 3. Klipper log shows the stack version instead of a question mark.",
+      "notes": "Firmware 0.7.5. Print start stays on the print screen and shows homing and motor check.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T17:26:18Z",
+  "published_at": "2026-11-24T17:47:56Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.4. Log tools run on Python 3. Klipper log shows the stack version instead of a question mark.",
-  "version": "0.7.4"
+  "notes": "Firmware 0.7.5. Print start stays on the print screen and shows homing and motor check.",
+  "version": "0.7.5"
 }
