@@ -1,25 +1,39 @@
 {
   "product": "NCPSKY ▲ DTMax",
   "firmware_target": "FLSun T1 Max",
-  "channel": "dev",
-  "published_at": "2026-11-22T19:52:43Z",
-  "min_panel": "0.5.0",
-  "notes": "T1 Max baseline from live printer — KlipperCore 0.14.0 / custom FLSunT1Max-20261122",
-  "klipper_core": "0.14.0",
-  "klipper_custom": "FLSunT1Max-20261122",
   "packages": [
     {
-      "id": "stack-2026.11.23.1",
+      "id": "panel-0.5.1",
+      "kind": "panel",
+      "version": "0.5.1",
+      "url": "packages/panel-0.5.1.zip",
+      "sha256": "9c13caafeecbe27db43fb15ecb1d1dabb5ad891bfaff2c9b09e3b240c081c2b2",
+      "size": 2220369,
+      "min_free_mb": 80,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "panel",
+      "notes": "panel 0.5.1 / stack 2026.11.24.1\n- 校准：电机降噪与噪音速度测绘合并；查看页仅显示噪音速度曲线\n- 打印：开始即进打印画面，准备阶段检查电机状态（不展示 Autotune）\n- 打印中仅可进入消息页；去掉详情页\n真机抽出基线 stack + 本地面板功能包，用于验证 GitHub OTA",
+      "persistent_globs": [
+        "settings.json",
+        "ota/config.json",
+        "ota/backup/**",
+        "ota/versions.json",
+        "ota/history.json"
+      ]
+    },
+    {
+      "id": "stack-2026.11.24.1",
       "kind": "stack",
-      "version": "2026.11.23.1",
-      "url": "packages/stack-2026.11.23.1.zip",
-      "sha256": "25ad615a7be7281618addb3fb2a8b0f0a69f9ae2bd22618499da7fc69f8472ed",
-      "size": 3659197,
+      "version": "2026.11.24.1",
+      "url": "packages/stack-2026.11.24.1.zip",
+      "sha256": "be6582b12cbfa68c9d4536d2eb52c48353bfc63947193ecbb6f99a327f80d086",
+      "size": 3587635,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Host stack baseline (KlipperCore 0.14.0)"
+      "notes": "panel 0.5.1 / stack 2026.11.24.1\n- 校准：电机降噪与噪音速度测绘合并；查看页仅显示噪音速度曲线\n- 打印：开始即进打印画面，准备阶段检查电机状态（不展示 Autotune）\n- 打印中仅可进入消息页；去掉详情页\n真机抽出基线 stack + 本地面板功能包，用于验证 GitHub OTA"
     },
     {
       "id": "mcu-20261122",
@@ -32,7 +46,11 @@
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "MCU image; UI confirm required"
+      "notes": "panel 0.5.1 / stack 2026.11.24.1\n- 校准：电机降噪与噪音速度测绘合并；查看页仅显示噪音速度曲线\n- 打印：开始即进打印画面，准备阶段检查电机状态（不展示 Autotune）\n- 打印中仅可进入消息页；去掉详情页\n真机抽出基线 stack + 本地面板功能包，用于验证 GitHub OTA"
     }
-  ]
+  ],
+  "channel": "dev",
+  "published_at": "2026-11-24T12:16:36Z",
+  "min_panel": "0.5.0",
+  "notes": "panel 0.5.1 / stack 2026.11.24.1\n- 校准：电机降噪与噪音速度测绘合并；查看页仅显示噪音速度曲线\n- 打印：开始即进打印画面，准备阶段检查电机状态（不展示 Autotune）\n- 打印中仅可进入消息页；去掉详情页\n真机抽出基线 stack + 本地面板功能包，用于验证 GitHub OTA"
 }
