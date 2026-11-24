@@ -45,17 +45,17 @@
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.5",
+      "id": "panel-0.7.6",
       "kind": "panel",
-      "version": "0.7.5",
-      "url": "packages/panel-0.7.5.zip",
-      "sha256": "52ae980b40d60d11e2dbf6799d8807c64ab26486b3493f9571dee0b55653e209",
-      "size": 2386319,
+      "version": "0.7.6",
+      "url": "packages/panel-0.7.6.zip",
+      "sha256": "c18a68e3f66ba8ddbbbfe5dc7c95bf53958d63ceb0609764a309b1af9a308780",
+      "size": 2388014,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.5. Print start stays on the print screen and shows homing and motor check.",
+      "notes": "Firmware 0.7.6. Print file list scrolls, and a USB tab prints gcode from a flash drive.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T17:47:56Z",
+  "published_at": "2026-11-24T17:51:00Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.5. Print start stays on the print screen and shows homing and motor check.",
-  "version": "0.7.5"
+  "notes": "Firmware 0.7.6. Print file list scrolls, and a USB tab prints gcode from a flash drive.",
+  "version": "0.7.6"
 }
