@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.3",
+      "id": "panel-0.5.4",
       "kind": "panel",
-      "version": "0.5.3",
-      "url": "packages/panel-0.5.3.zip",
-      "sha256": "674734b760578df3690dfcd2375759b56f69a5abdb7a6e5450188ceee630c815",
-      "size": 2225285,
+      "version": "0.5.4",
+      "url": "packages/panel-0.5.4.zip",
+      "sha256": "6e2dea699aca0085cd45a2962076cade7995c2e043658d6b1f05bd940154267e",
+      "size": 2225877,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.3（开发）\n- 设置/更新页防裁切；OTA 弹窗按钮固定可见\n- 轴移动十字键重排；温度/耗材支持步进与手输\n- 密码键盘铺满内容区、键高自适应、点击区加大",
+      "notes": "panel 0.5.4（开发）\n- 修复 OTA 后脚本丢 +x 导致卡在启动页\n- 安装时强制恢复 run_panel.sh 等执行权限\n- 含 0.5.3 UI 布局优化",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T12:50:14Z",
+  "published_at": "2026-11-24T12:55:59Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.3（开发）\n- 设置/更新页防裁切；OTA 弹窗按钮固定可见\n- 轴移动十字键重排；温度/耗材支持步进与手输\n- 密码键盘铺满内容区、键高自适应、点击区加大"
+  "notes": "panel 0.5.4（开发）\n- 修复 OTA 后脚本丢 +x 导致卡在启动页\n- 安装时强制恢复 run_panel.sh 等执行权限\n- 含 0.5.3 UI 布局优化"
 }
