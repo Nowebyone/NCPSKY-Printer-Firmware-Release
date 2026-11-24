@@ -14,7 +14,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Full OTA retest bump (all kinds +1)"
+      "notes": "Full OTA retest; MCU bin padded +16B to exercise real flash"
     },
     {
       "id": "platform-plat-2026.11.24.4",
@@ -27,7 +27,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Full OTA retest bump (all kinds +1)"
+      "notes": "Full OTA retest; MCU bin padded +16B to exercise real flash"
     },
     {
       "id": "stack-2026.11.24.6",
@@ -40,7 +40,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Full OTA retest bump (all kinds +1)",
+      "notes": "Full OTA retest; MCU bin padded +16B to exercise real flash",
       "printer_cfg_merge": true
     },
     {
@@ -54,7 +54,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Full OTA retest bump (all kinds +1)",
+      "notes": "Full OTA retest; MCU bin padded +16B to exercise real flash",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -65,20 +65,20 @@
       ]
     },
     {
-      "id": "mcu-20261126",
+      "id": "mcu-20261127",
       "kind": "mcu",
-      "version": "mcu-20261126",
-      "url": "packages/mcu-20261126.bin",
-      "sha256": "76dada1616e4bcffd34f150de602ce5cfdcbd46e7f2fb84df85e2beb2462b73c",
-      "size": 35672,
+      "version": "mcu-20261127",
+      "url": "packages/mcu-20261127.bin",
+      "sha256": "96b21804d082c40b65525945fb2f18f00094ab05f55792e36a63ffa6a892d3aa",
+      "size": 35688,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "Full OTA retest bump (all kinds +1)"
+      "notes": "Full OTA retest; MCU bin padded +16B to exercise real flash"
     }
   ],
-  "published_at": "2026-11-24T14:23:57Z",
+  "published_at": "2026-11-24T14:25:35Z",
   "min_panel": "0.5.0",
-  "notes": "Full OTA retest bump (all kinds +1)"
+  "notes": "Full OTA retest; MCU bin padded +16B to exercise real flash"
 }
