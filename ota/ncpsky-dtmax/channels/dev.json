@@ -30,17 +30,17 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.1",
+      "id": "stack-2026.11.25.2",
       "kind": "stack",
-      "version": "2026.11.25.1",
-      "url": "packages/stack-2026.11.25.1.zip",
-      "sha256": "a05fe0bfbd00792809b83faf004c888d2e0740f97bca7a340a50886c7b21c86b",
-      "size": 3610452,
+      "version": "2026.11.25.2",
+      "url": "packages/stack-2026.11.25.2.zip",
+      "sha256": "2f10c66c9e612365b8b873a134b82af342da9ad78b2689a9e77b52dba9def432",
+      "size": 3610741,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Adaptive bed mesh: probe_height scans gcode first-layer footprint",
+      "notes": "Faster mesh: lift 15 mm/s, XY 80 mm/s; PROBE_HEIGHT at mesh center, 5 samples",
       "printer_cfg_merge": true
     },
     {
@@ -78,7 +78,7 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T16:05:44Z",
+  "published_at": "2026-11-24T16:14:01Z",
   "min_panel": "0.5.0",
-  "notes": "Adaptive bed mesh: probe_height scans gcode first-layer footprint"
+  "notes": "Faster mesh: lift 15 mm/s, XY 80 mm/s; PROBE_HEIGHT at mesh center, 5 samples"
 }
