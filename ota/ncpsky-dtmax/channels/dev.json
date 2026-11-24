@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.8",
+      "id": "panel-0.5.9",
       "kind": "panel",
-      "version": "0.5.8",
-      "url": "packages/panel-0.5.8.zip",
-      "sha256": "969cfdbe3d86c385a8969accba683b9f23d6e87e03d835ce6d7e497baf0a569e",
-      "size": 2227310,
+      "version": "0.5.9",
+      "url": "packages/panel-0.5.9.zip",
+      "sha256": "139f9e59c7e7411f4f3a8719fc4806c94b148b715339550fbac5b8f65ff21c2c",
+      "size": 2229036,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.8（开发）\n- 更新页明确显示当前版本与发布版（稳定/测试/开发）\n- 更新弹窗展示当前版本·发布版 → 可更新至\n- 含 0.5.7：噪音曲线三立柱 / 50–800、c_helper 保护",
+      "notes": "panel 0.5.9（开发）\n- 修复更新页按钮下方杂色点（Tab 裁切/滚动残留）\n- 冷启动/重启后自动重连 Wi‑Fi，并在已启用时代理重启 sing-box\n- 含 0.5.8：版本与发布版展示",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T13:22:32Z",
+  "published_at": "2026-11-24T13:34:09Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.8（开发）\n- 更新页明确显示当前版本与发布版（稳定/测试/开发）\n- 更新弹窗展示当前版本·发布版 → 可更新至\n- 含 0.5.7：噪音曲线三立柱 / 50–800、c_helper 保护"
+  "notes": "panel 0.5.9（开发）\n- 修复更新页按钮下方杂色点（Tab 裁切/滚动残留）\n- 冷启动/重启后自动重连 Wi‑Fi，并在已启用时代理重启 sing-box\n- 含 0.5.8：版本与发布版展示"
 }
