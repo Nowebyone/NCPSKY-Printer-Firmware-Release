@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.15",
+      "id": "stack-2026.11.25.16",
       "kind": "stack",
-      "version": "2026.11.25.15",
-      "url": "packages/stack-2026.11.25.15.zip",
-      "sha256": "78d179b90a1f5df468c419e98b3ee9ef7ca5e0484100196b759dbd1956f634e0",
-      "size": 3614666,
+      "version": "2026.11.25.16",
+      "url": "packages/stack-2026.11.25.16.zip",
+      "sha256": "c94bb5b7f623682cfa87ae964416c4128925a5b9bd583d7f4b207dcfa18c9698",
+      "size": 3614793,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.9. First homing pass is 80 mm/s to stay off resonance. Second pass stays at 3 mm/s.",
+      "notes": "Firmware 0.7.11. Print prep shows TMC Autotune motor check, then nozzle and bed temperature wait.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.9",
+      "id": "panel-0.7.11",
       "kind": "panel",
-      "version": "0.7.9",
-      "url": "packages/panel-0.7.9.zip",
-      "sha256": "5f04db46a756e09f1330a36b9fef6c9750b0b2c883a54bfcc1f6a6a1b2e065ac",
-      "size": 2388270,
+      "version": "0.7.11",
+      "url": "packages/panel-0.7.11.zip",
+      "sha256": "651407234f511b8e213dfbe169ef1dcf2907e410ba4fea7b71aef12f1a57ec32",
+      "size": 2388696,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.9. First homing pass is 80 mm/s to stay off resonance. Second pass stays at 3 mm/s.",
+      "notes": "Firmware 0.7.11. Print prep shows TMC Autotune motor check, then nozzle and bed temperature wait.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T18:03:37Z",
+  "published_at": "2026-11-24T18:09:04Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.9. First homing pass is 80 mm/s to stay off resonance. Second pass stays at 3 mm/s.",
-  "version": "0.7.9"
+  "notes": "Firmware 0.7.11. Print prep shows TMC Autotune motor check, then nozzle and bed temperature wait.",
+  "version": "0.7.11"
 }
