@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.4",
+      "id": "panel-0.5.5",
       "kind": "panel",
-      "version": "0.5.4",
-      "url": "packages/panel-0.5.4.zip",
-      "sha256": "6e2dea699aca0085cd45a2962076cade7995c2e043658d6b1f05bd940154267e",
-      "size": 2225877,
+      "version": "0.5.5",
+      "url": "packages/panel-0.5.5.zip",
+      "sha256": "229891a02eae43d95a4f31823314042e7f0d7b24f7fe771a480447ef5ad2ee95",
+      "size": 2226472,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.4（开发）\n- 修复 OTA 后脚本丢 +x 导致卡在启动页\n- 安装时强制恢复 run_panel.sh 等执行权限\n- 含 0.5.3 UI 布局优化",
+      "notes": "panel 0.5.5（开发）\n- startboot 改为 bash 调用 run_panel，丢失 +x 不再卡启动页\n- OTA 安装后强制 chmod + 重写 startboot\n- 含 0.5.3 UI 优化",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T12:55:59Z",
+  "published_at": "2026-11-24T13:04:49Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.4（开发）\n- 修复 OTA 后脚本丢 +x 导致卡在启动页\n- 安装时强制恢复 run_panel.sh 等执行权限\n- 含 0.5.3 UI 布局优化"
+  "notes": "panel 0.5.5（开发）\n- startboot 改为 bash 调用 run_panel，丢失 +x 不再卡启动页\n- OTA 安装后强制 chmod + 重写 startboot\n- 含 0.5.3 UI 优化"
 }
