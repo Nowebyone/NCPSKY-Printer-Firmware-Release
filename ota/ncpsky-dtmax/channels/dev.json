@@ -3,17 +3,17 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.2",
+      "id": "panel-0.5.3",
       "kind": "panel",
-      "version": "0.5.2",
-      "url": "packages/panel-0.5.2.zip",
-      "sha256": "4129ce1bf0e1c46d77cd98c9f9d3002cd6935ac38c76e979eef04c63cd74a3d9",
-      "size": 2223511,
+      "version": "0.5.3",
+      "url": "packages/panel-0.5.3.zip",
+      "sha256": "674734b760578df3690dfcd2375759b56f69a5abdb7a6e5450188ceee630c815",
+      "size": 2225285,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录",
+      "notes": "panel 0.5.3（开发）\n- 设置/更新页防裁切；OTA 弹窗按钮固定可见\n- 轴移动十字键重排；温度/耗材支持步进与手输\n- 密码键盘铺满内容区、键高自适应、点击区加大",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -50,7 +50,7 @@
     }
   ],
   "channel": "dev",
-  "published_at": "2026-11-24T12:39:42Z",
+  "published_at": "2026-11-24T12:50:14Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
+  "notes": "panel 0.5.3（开发）\n- 设置/更新页防裁切；OTA 弹窗按钮固定可见\n- 轴移动十字键重排；温度/耗材支持步进与手输\n- 密码键盘铺满内容区、键高自适应、点击区加大"
 }
