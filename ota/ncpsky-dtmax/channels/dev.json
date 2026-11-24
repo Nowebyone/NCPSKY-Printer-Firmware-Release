@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.21",
+      "id": "stack-2026.11.25.22",
       "kind": "stack",
-      "version": "2026.11.25.21",
-      "url": "packages/stack-2026.11.25.21.zip",
-      "sha256": "c74499f162b2ca39ded2c15ca04b5632f4651b6525dd12ad58ce8b1f20f66338",
-      "size": 3618973,
+      "version": "2026.11.25.22",
+      "url": "packages/stack-2026.11.25.22.zip",
+      "sha256": "013fca9ad54d5bdd76237c672333e756f44d67ef31c648d0471e9349743aebf3",
+      "size": 3618820,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.16. Towers use StealthChop below the autoswitch speed and SpreadCycle above it, at 1.65A with CoolStep off.",
+      "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.16",
+      "id": "panel-0.7.17",
       "kind": "panel",
-      "version": "0.7.16",
-      "url": "packages/panel-0.7.16.zip",
-      "sha256": "59700a2850555a2ac26daddcfb0ccf9fcc059b370b2bbfbebe9cf8c972fe00c3",
-      "size": 2391987,
+      "version": "0.7.17",
+      "url": "packages/panel-0.7.17.zip",
+      "sha256": "33924c05d2b58ad4d979a0a4586db6305332b50eb3dcb9d614ef07d914423374",
+      "size": 2391973,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.16. Towers use StealthChop below the autoswitch speed and SpreadCycle above it, at 1.65A with CoolStep off.",
+      "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T19:01:27Z",
+  "published_at": "2026-11-24T19:05:15Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.16. Towers use StealthChop below the autoswitch speed and SpreadCycle above it, at 1.65A with CoolStep off.",
-  "version": "0.7.16"
+  "notes": "Firmware 0.7.17. TMC Autotune tower current ceiling is 1.65A and CoolStep stays enabled.",
+  "version": "0.7.17"
 }
