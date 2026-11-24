@@ -13,7 +13,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg"
+      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     },
     {
       "id": "platform-plat-2026.11.24.4",
@@ -26,35 +26,35 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg"
+      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     },
     {
-      "id": "stack-2026.11.25.24",
+      "id": "stack-2026.11.25.25",
       "kind": "stack",
-      "version": "2026.11.25.24",
-      "url": "packages/stack-2026.11.25.24.zip",
-      "sha256": "7d2d4748b6f674f128678dc87eef7d7db5646c02a3b2ae05e3f1538dd6001453",
-      "size": 3557516,
+      "version": "2026.11.25.25",
+      "url": "packages/stack-2026.11.25.25.zip",
+      "sha256": "7ecb4e8c308d2e69ad3d7f3f7c2b2c1d93472ae51d0411e28f704a67b381baab",
+      "size": 3557846,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg",
+      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.18",
+      "id": "panel-0.7.19",
       "kind": "panel",
-      "version": "0.7.18",
-      "url": "packages/panel-0.7.18.zip",
-      "sha256": "77a6db46f6975fa2e808c90193fc862cc2ffa156b970c2aabb4410148b919cdf",
-      "size": 2408530,
+      "version": "0.7.19",
+      "url": "packages/panel-0.7.19.zip",
+      "sha256": "b823b24aaa1ae1ee7bbb308aef0d9683b896fd5aeee3a6f139b7cdbaddab06f4",
+      "size": 2408900,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg",
+      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -75,12 +75,11 @@
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg"
+      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     }
   ],
-  "published_at": "2026-11-24T21:26:38Z",
+  "published_at": "2026-11-24T21:41:28Z",
   "min_panel": "0.5.0",
-  "version": "0.7.18",
-  "notes": "panel 0.7.18 / stack 2026.11.25.24\n- 电机降噪改为全程 StealthChop（silent），解决降噪后反而变吵\n- 校准顺序：床网 → 电机降噪 → 震动补偿；震动补偿不再中途 SAVE_CONFIG\n- 开机/归位/开打准备统一套用静音斩波；autoswitch 仅保留内部宏\n- 同步 ADXL 噪音速度测绘宏与种子图；stack 下发 tmc_autotune.cfg",
-  "channel": "catalog"
+  "version": "0.7.19",
+  "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
 }
