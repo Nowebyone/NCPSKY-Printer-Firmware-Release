@@ -30,17 +30,17 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.2",
+      "id": "stack-2026.11.25.3",
       "kind": "stack",
-      "version": "2026.11.25.2",
-      "url": "packages/stack-2026.11.25.2.zip",
-      "sha256": "2f10c66c9e612365b8b873a134b82af342da9ad78b2689a9e77b52dba9def432",
-      "size": 3610741,
+      "version": "2026.11.25.3",
+      "url": "packages/stack-2026.11.25.3.zip",
+      "sha256": "66164d4b877c7803a703eea4c9c894b02310263803adc4e60cb3d6c8a7e38152",
+      "size": 3610746,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Faster mesh: lift 15 mm/s, XY 80 mm/s; PROBE_HEIGHT at mesh center, 5 samples",
+      "notes": "Mesh XY travel 500 mm/s. Lift between points stays 15 mm/s.",
       "printer_cfg_merge": true
     },
     {
@@ -78,7 +78,7 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T16:14:01Z",
+  "published_at": "2026-11-24T16:16:59Z",
   "min_panel": "0.5.0",
-  "notes": "Faster mesh: lift 15 mm/s, XY 80 mm/s; PROBE_HEIGHT at mesh center, 5 samples"
+  "notes": "Mesh XY travel 500 mm/s. Lift between points stays 15 mm/s."
 }
