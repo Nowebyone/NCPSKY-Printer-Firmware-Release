@@ -40,22 +40,22 @@
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.0. Settings show this version. printer.cfg is replaced; bed mesh and calibration are not kept.",
-      "printer_cfg_replace": true,
-      "printer_cfg_merge": false
+      "notes": "Firmware body replaces hand edits. Bed mesh and auto-calibration in SAVE_CONFIG are kept.",
+      "printer_cfg_replace": false,
+      "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.0",
+      "id": "panel-0.7.1",
       "kind": "panel",
-      "version": "0.7.0",
-      "url": "packages/panel-0.7.0.zip",
-      "sha256": "8122dda2f357ed5328677c63444187c04016f00c9a107a15a42487a811e02e81",
-      "size": 2385212,
+      "version": "0.7.1",
+      "url": "packages/panel-0.7.1.zip",
+      "sha256": "52614d67e6a708643fd28270f47b4355c85223e707f0eb4953f57794879f1dfd",
+      "size": 2385890,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.0. Settings show this version. printer.cfg is replaced; bed mesh and calibration are not kept.",
+      "notes": "Firmware 0.7.1. Hand edits such as motor current return to firmware defaults. Bed mesh and auto-calibration are kept.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -79,8 +79,8 @@
       "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T17:01:41Z",
+  "published_at": "2026-11-24T17:03:55Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.0. Settings show this version. printer.cfg is replaced; bed mesh and calibration are not kept.",
-  "version": "0.7.0"
+  "notes": "Firmware 0.7.1. Hand edits such as motor current return to firmware defaults. Bed mesh and auto-calibration are kept.",
+  "version": "0.7.1"
 }
