@@ -14,7 +14,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
+      "notes": "Full-coverage OTA 0.6.2: permission-safe install + cfg merge + resilient system"
     },
     {
       "id": "platform-plat-2026.11.24.2",
@@ -27,7 +27,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
+      "notes": "Full-coverage OTA 0.6.2: permission-safe install + cfg merge + resilient system"
     },
     {
       "id": "stack-2026.11.24.4",
@@ -40,21 +40,21 @@
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge",
+      "notes": "Full-coverage OTA 0.6.2: permission-safe install + cfg merge + resilient system",
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.6.1",
+      "id": "panel-0.6.2",
       "kind": "panel",
-      "version": "0.6.1",
-      "url": "packages/panel-0.6.1.zip",
-      "sha256": "0d220ce0c66eaf8906b01c8841d59f5ec386cb964353baad06920dd96c5b64cc",
-      "size": 2245060,
+      "version": "0.6.2",
+      "url": "packages/panel-0.6.2.zip",
+      "sha256": "a5f08203c8f00b670f777e1ad94f45a9d06b815a7b0c505b761d949434a6db0d",
+      "size": 2245439,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge",
+      "notes": "Full-coverage OTA 0.6.2: permission-safe install + cfg merge + resilient system",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -75,10 +75,10 @@
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
+      "notes": "Full-coverage OTA 0.6.2: permission-safe install + cfg merge + resilient system"
     }
   ],
-  "published_at": "2026-11-24T14:00:06Z",
+  "published_at": "2026-11-24T14:07:59Z",
   "min_panel": "0.5.0",
-  "notes": "Full-coverage OTA 0.6.1: resilient system apt + cfg merge"
+  "notes": "Full-coverage OTA 0.6.2: permission-safe install + cfg merge + resilient system"
 }
