@@ -30,32 +30,32 @@
       "notes": "Rebuilt MCU bin on T1 toolchain with NCPSKY build tag"
     },
     {
-      "id": "stack-2026.11.25.13",
+      "id": "stack-2026.11.25.14",
       "kind": "stack",
-      "version": "2026.11.25.13",
-      "url": "packages/stack-2026.11.25.13.zip",
-      "sha256": "1e1ae354cbb7724eee347ace0db3ac32cc52702aadee5463ed6ac8e82cb08e74",
-      "size": 3614298,
+      "version": "2026.11.25.14",
+      "url": "packages/stack-2026.11.25.14.zip",
+      "sha256": "269156fcb6048d6e331ebf7f49349206b6d2b2956f408050e480e94914a116e0",
+      "size": 3614662,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "Firmware 0.7.7. Homing approaches at 150 mm/s, then touches off at the original 3 mm/s.",
+      "notes": "Firmware 0.7.8. Adaptive mesh no longer crashes when Klipper reports minimum_cruise_ratio.",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.7",
+      "id": "panel-0.7.8",
       "kind": "panel",
-      "version": "0.7.7",
-      "url": "packages/panel-0.7.7.zip",
-      "sha256": "c28ccc2ae911c148c811b51365404144671f772680b1aa46f9a9c3d646f33acc",
-      "size": 2387897,
+      "version": "0.7.8",
+      "url": "packages/panel-0.7.8.zip",
+      "sha256": "0ba2ae04b3d606c4cf68d66de3b9c94ddf3ba5c8806345c52d802e64bcbbe681",
+      "size": 2388274,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.7. Homing approaches at 150 mm/s, then touches off at the original 3 mm/s.",
+      "notes": "Firmware 0.7.8. Adaptive mesh no longer crashes when Klipper reports minimum_cruise_ratio.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,8 +66,8 @@
       ]
     }
   ],
-  "published_at": "2026-11-24T17:52:47Z",
+  "published_at": "2026-11-24T17:59:45Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.7. Homing approaches at 150 mm/s, then touches off at the original 3 mm/s.",
-  "version": "0.7.7"
+  "notes": "Firmware 0.7.8. Adaptive mesh no longer crashes when Klipper reports minimum_cruise_ratio.",
+  "version": "0.7.8"
 }
