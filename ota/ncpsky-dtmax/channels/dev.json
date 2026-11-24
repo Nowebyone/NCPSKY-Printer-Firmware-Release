@@ -45,17 +45,17 @@
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.1",
+      "id": "panel-0.7.3",
       "kind": "panel",
-      "version": "0.7.1",
-      "url": "packages/panel-0.7.1.zip",
-      "sha256": "52614d67e6a708643fd28270f47b4355c85223e707f0eb4953f57794879f1dfd",
-      "size": 2385890,
+      "version": "0.7.3",
+      "url": "packages/panel-0.7.3.zip",
+      "sha256": "e3df4f8e24c416568d8c43c0b5af7d1f0fc884363fd8dac606e35585101a55e0",
+      "size": 2386109,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "Firmware 0.7.1. Hand edits such as motor current return to firmware defaults. Bed mesh and auto-calibration are kept.",
+      "notes": "Firmware 0.7.3. One-tap update does not flash the MCU. GitHub downloads retry after a dropped connection.",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -64,23 +64,10 @@
         "ota/history.json",
         "ota/persist_profile.json"
       ]
-    },
-    {
-      "id": "mcu-20261129",
-      "kind": "mcu",
-      "version": "mcu-20261129",
-      "url": "packages/mcu-20261129.bin",
-      "sha256": "f2f795b72969f2dc948f3f83947fe98ee60b50d1424f4aed60968254cc344f0d",
-      "size": 40972,
-      "min_free_mb": 20,
-      "requires_idle": true,
-      "auto": false,
-      "restart": "mcu_flash",
-      "notes": "Windows native cross-build (STM32CubeCLT)"
     }
   ],
-  "published_at": "2026-11-24T17:15:04Z",
+  "published_at": "2026-11-24T17:19:05Z",
   "min_panel": "0.5.0",
-  "notes": "Firmware 0.7.2. Klipper starts again: bed mesh command help was missing. Calibration is still kept.",
-  "version": "0.7.2"
+  "notes": "Firmware 0.7.3. One-tap update does not flash the MCU. GitHub downloads retry after a dropped connection.",
+  "version": "0.7.3"
 }

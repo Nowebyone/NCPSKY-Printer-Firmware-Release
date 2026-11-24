@@ -34,19 +34,6 @@
       "auto": true,
       "restart": "klipper",
       "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
-    },
-    {
-      "id": "mcu-20261122",
-      "kind": "mcu",
-      "version": "mcu-20261122",
-      "url": "packages/mcu-20261122.bin",
-      "sha256": "76dada1616e4bcffd34f150de602ce5cfdcbd46e7f2fb84df85e2beb2462b73c",
-      "size": 35672,
-      "min_free_mb": 20,
-      "requires_idle": true,
-      "auto": false,
-      "restart": "mcu_flash",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
     }
   ],
   "channel": "beta",
