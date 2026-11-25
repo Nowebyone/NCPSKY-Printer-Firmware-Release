@@ -30,32 +30,32 @@
       "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     },
     {
-      "id": "stack-2026.11.25.26",
+      "id": "stack-2026.11.25.27",
       "kind": "stack",
-      "version": "2026.11.25.26",
-      "url": "packages/stack-2026.11.25.26.zip",
-      "sha256": "13b706aa0db54b31e5da61479a330fde2a57cf2c79f9c0a47dcbd31398f82b54",
-      "size": 40050,
+      "version": "2026.11.25.27",
+      "url": "packages/stack-2026.11.25.27.zip",
+      "sha256": "4ed919a9009ec99f0baeb5e2f4ebc9135a0498b28084992ed103dc701ff15a2e",
+      "size": 46184,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "panel 0.7.20 / stack 2026.11.25.26\n- 电气降噪：TMC2160 PWM 46.9 kHz，pwm_reg 8，保持电流塔柱 0.45A / 挤出 0.15A\n- 运行电流仍 1.65A / 1.1A，速度和加速度上限不变",
+      "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.20",
+      "id": "panel-0.7.21",
       "kind": "panel",
-      "version": "0.7.20",
-      "url": "packages/panel-0.7.20.zip",
-      "sha256": "c23946c1fa13a24a48afa900097a1251f6eeb37bce302e37ba2af1eae0f5d14c",
-      "size": 2153256,
+      "version": "0.7.21",
+      "url": "packages/panel-0.7.21.zip",
+      "sha256": "6c8330adb1667f72ea746b148f1ed5ad283ca2391b6163c2f217490fd744db26",
+      "size": 2160991,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.20 / stack 2026.11.25.26\n- 电气降噪：TMC2160 PWM 46.9 kHz，pwm_reg 8，保持电流塔柱 0.45A / 挤出 0.15A\n- 运行电流仍 1.65A / 1.1A，速度和加速度上限不变",
+      "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,21 +66,21 @@
       ]
     },
     {
-      "id": "mcu-20261125",
+      "id": "mcu-20261126",
       "kind": "mcu",
-      "version": "mcu-20261125",
-      "url": "packages/mcu-20261125.tar.gz",
-      "sha256": "25c5229822eb2b3ee025333a57c95582d46072f0d4cfc25cf02c6ddc8dcd1255",
-      "size": 2216,
+      "version": "mcu-20261126",
+      "url": "packages/mcu-20261126.tar.gz",
+      "sha256": "a55fbda609b6bd5ed38a8a991166d6f9ad0383cc46f3a3ab780bd4ff7e3d1bc3",
+      "size": 32936,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
+      "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
     }
   ],
-  "published_at": "2026-11-25T09:51:47Z",
+  "published_at": "2026-11-25T10:30:25Z",
   "min_panel": "0.5.0",
-  "version": "0.7.20",
-  "notes": "panel 0.7.20 / stack 2026.11.25.26\n- 电气降噪：TMC2160 PWM 46.9 kHz，pwm_reg 8，保持电流塔柱 0.45A / 挤出 0.15A\n- 运行电流仍 1.65A / 1.1A，速度和加速度上限不变"
+  "version": "0.7.21",
+  "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
 }
