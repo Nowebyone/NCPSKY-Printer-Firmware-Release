@@ -30,32 +30,32 @@
       "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     },
     {
-      "id": "stack-2026.11.25.27",
+      "id": "stack-2026.11.25.28",
       "kind": "stack",
-      "version": "2026.11.25.27",
-      "url": "packages/stack-2026.11.25.27.zip",
-      "sha256": "4ed919a9009ec99f0baeb5e2f4ebc9135a0498b28084992ed103dc701ff15a2e",
-      "size": 46184,
+      "version": "2026.11.25.28",
+      "url": "packages/stack-2026.11.25.28.zip",
+      "sha256": "bbea58241ee80ffa8317c73f3ac2faa2a7a665388c48e9259998e7d34d962f2c",
+      "size": 47127,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
+      "notes": "panel 0.7.22 / stack 2026.11.25.28 / mcu mcu-20261127\n- 线圈电流同时抵消 1、2、4 次谐波，更新更快\n- 电机降噪会移动喷头；降不下来的谐波不保存\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.21",
+      "id": "panel-0.7.22",
       "kind": "panel",
-      "version": "0.7.21",
-      "url": "packages/panel-0.7.21.zip",
-      "sha256": "6c8330adb1667f72ea746b148f1ed5ad283ca2391b6163c2f217490fd744db26",
-      "size": 2160991,
+      "version": "0.7.22",
+      "url": "packages/panel-0.7.22.zip",
+      "sha256": "5859e29daad5da172f2c132f79ee95b3a8404d74179e4298a38c76cc778a93cd",
+      "size": 2161938,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
+      "notes": "panel 0.7.22 / stack 2026.11.25.28 / mcu mcu-20261127\n- 线圈电流同时抵消 1、2、4 次谐波，更新更快\n- 电机降噪会移动喷头；降不下来的谐波不保存\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,21 +66,21 @@
       ]
     },
     {
-      "id": "mcu-20261126",
+      "id": "mcu-20261127",
       "kind": "mcu",
-      "version": "mcu-20261126",
-      "url": "packages/mcu-20261126.tar.gz",
-      "sha256": "a55fbda609b6bd5ed38a8a991166d6f9ad0383cc46f3a3ab780bd4ff7e3d1bc3",
-      "size": 32936,
+      "version": "mcu-20261127",
+      "url": "packages/mcu-20261127.tar.gz",
+      "sha256": "fe67af046ee51479f77f187ac1bab989d4cf13966461bb64bcc39a81d304d4ee",
+      "size": 33163,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+      "notes": "panel 0.7.22 / stack 2026.11.25.28 / mcu mcu-20261127\n- 线圈电流同时抵消 1、2、4 次谐波，更新更快\n- 电机降噪会移动喷头；降不下来的谐波不保存\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
     }
   ],
-  "published_at": "2026-11-25T10:30:25Z",
+  "published_at": "2026-11-25T10:49:01Z",
   "min_panel": "0.5.0",
-  "version": "0.7.21",
-  "notes": "panel 0.7.21 / stack 2026.11.25.27 / mcu mcu-20261126\n- MCU 按步进把正弦电流写入 TMC2160，用来抵消整步嗡声\n- 面板电机降噪会移动喷头并重新归零；没校准前仍是步进静音\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+  "version": "0.7.22",
+  "notes": "panel 0.7.22 / stack 2026.11.25.28 / mcu mcu-20261127\n- 线圈电流同时抵消 1、2、4 次谐波，更新更快\n- 电机降噪会移动喷头；降不下来的谐波不保存\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
 }
