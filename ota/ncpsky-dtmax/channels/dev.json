@@ -30,32 +30,32 @@
       "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     },
     {
-      "id": "stack-2026.11.25.29",
+      "id": "stack-2026.11.25.30",
       "kind": "stack",
-      "version": "2026.11.25.29",
-      "url": "packages/stack-2026.11.25.29.zip",
-      "sha256": "b1700993ab447b3bf2557369fee964f481dc83298d699958c854defcf22828aa",
-      "size": 47277,
+      "version": "2026.11.25.30",
+      "url": "packages/stack-2026.11.25.30.zip",
+      "sha256": "2e5611078782992ada25edf3bfd9de4488f7228cb10bb28d6c19a0744eade093",
+      "size": 48681,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "panel 0.7.23 / stack 2026.11.25.29 / mcu mcu-20261128\n- 电流角改为和 TMC2160 正弦表同向，归零方向与旧步进固件一致\n- 不要刷 0.7.22，那一版方向是反的\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
+      "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.23",
+      "id": "panel-0.7.24",
       "kind": "panel",
-      "version": "0.7.23",
-      "url": "packages/panel-0.7.23.zip",
-      "sha256": "b0a2b2a25ab9b9f7186d6811a49aae4c97e6ace6590996a047815ad18563f582",
-      "size": 2162087,
+      "version": "0.7.24",
+      "url": "packages/panel-0.7.24.zip",
+      "sha256": "000ec2b666f2322a01d1a5f34be5fb18c6e0f1d40c5f429ebb5d7ad54037c4ce",
+      "size": 2163499,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.23 / stack 2026.11.25.29 / mcu mcu-20261128\n- 电流角改为和 TMC2160 正弦表同向，归零方向与旧步进固件一致\n- 不要刷 0.7.22，那一版方向是反的\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
+      "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,21 +66,21 @@
       ]
     },
     {
-      "id": "mcu-20261128",
+      "id": "mcu-20261129",
       "kind": "mcu",
-      "version": "mcu-20261128",
-      "url": "packages/mcu-20261128.tar.gz",
-      "sha256": "ccfd68ab1e6d5469f8703e54e134d12a96bf2ab11880444d1acca2c681c7d9cb",
-      "size": 33175,
+      "version": "mcu-20261129",
+      "url": "packages/mcu-20261129.tar.gz",
+      "sha256": "f6d3b2bfe6dd910ec0cbbec9595a3fc02912d8bc50effcd274609d1fecb0dee6",
+      "size": 33341,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.7.23 / stack 2026.11.25.29 / mcu mcu-20261128\n- 电流角改为和 TMC2160 正弦表同向，归零方向与旧步进固件一致\n- 不要刷 0.7.22，那一版方向是反的\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+      "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
     }
   ],
-  "published_at": "2026-11-25T11:02:04Z",
+  "published_at": "2026-11-25T11:18:12Z",
   "min_panel": "0.5.0",
-  "version": "0.7.23",
-  "notes": "panel 0.7.23 / stack 2026.11.25.29 / mcu mcu-20261128\n- 电流角改为和 TMC2160 正弦表同向，归零方向与旧步进固件一致\n- 不要刷 0.7.22，那一版方向是反的\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+  "version": "0.7.24",
+  "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
 }
