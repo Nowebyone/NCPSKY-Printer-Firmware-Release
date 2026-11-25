@@ -30,32 +30,32 @@
       "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
     },
     {
-      "id": "stack-2026.11.25.30",
+      "id": "stack-2026.11.25.31",
       "kind": "stack",
-      "version": "2026.11.25.30",
-      "url": "packages/stack-2026.11.25.30.zip",
-      "sha256": "2e5611078782992ada25edf3bfd9de4488f7228cb10bb28d6c19a0744eade093",
-      "size": 48681,
+      "version": "2026.11.25.31",
+      "url": "packages/stack-2026.11.25.31.zip",
+      "sha256": "78a126efe93443cad1398600d87c970bfb26d4507537f0ef8287c3e58c5bc486",
+      "size": 48265,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
+      "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电机降噪只校准三根塔柱，挤出机保持步进静音\n- MCU 与 0.7.24 相同，仍要在面板里确认刷写",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.24",
+      "id": "panel-0.7.25",
       "kind": "panel",
-      "version": "0.7.24",
-      "url": "packages/panel-0.7.24.zip",
-      "sha256": "000ec2b666f2322a01d1a5f34be5fb18c6e0f1d40c5f429ebb5d7ad54037c4ce",
-      "size": 2163499,
+      "version": "0.7.25",
+      "url": "packages/panel-0.7.25.zip",
+      "sha256": "75b919af15426e8696d2542b8198dc875840f46088badfd17dcfe7d8256137f2",
+      "size": 2163067,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link",
+      "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电机降噪只校准三根塔柱，挤出机保持步进静音\n- MCU 与 0.7.24 相同，仍要在面板里确认刷写",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -76,11 +76,11 @@
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+      "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次；只校准三根塔柱\n- 三台塔柱同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
     }
   ],
-  "published_at": "2026-11-25T11:18:12Z",
+  "published_at": "2026-11-25T11:24:16Z",
   "min_panel": "0.5.0",
-  "version": "0.7.24",
-  "notes": "panel 0.7.24 / stack 2026.11.25.30 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次，挤出机一起测\n- 四台电机同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+  "version": "0.7.25",
+  "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电机降噪只校准三根塔柱，挤出机保持步进静音\n- MCU 与 0.7.24 相同，仍要在面板里确认刷写"
 }
