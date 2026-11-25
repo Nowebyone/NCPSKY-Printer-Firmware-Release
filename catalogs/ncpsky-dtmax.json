@@ -44,17 +44,17 @@
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.25",
+      "id": "panel-0.7.26",
       "kind": "panel",
-      "version": "0.7.25",
-      "url": "packages/panel-0.7.25.zip",
-      "sha256": "75b919af15426e8696d2542b8198dc875840f46088badfd17dcfe7d8256137f2",
-      "size": 2163067,
+      "version": "0.7.26",
+      "url": "packages/panel-0.7.26.zip",
+      "sha256": "6a0b5633e7bb20d9340003c8fb814240950dfa79a76a9ea55c8772099baebdef",
+      "size": 2419175,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电机降噪只校准三根塔柱，挤出机保持步进静音\n- MCU 与 0.7.24 相同，仍要在面板里确认刷写",
+      "notes": "panel 0.7.26 / stack 2026.11.25.31 / mcu mcu-20261129\n- 面板启动脚本固定为 Unix 换行，更新后可以进入系统",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -78,8 +78,8 @@
       "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次；只校准三根塔柱\n- 三台塔柱同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
     }
   ],
-  "published_at": "2026-11-25T11:24:16Z",
+  "published_at": "2026-11-25T13:16:34Z",
   "min_panel": "0.5.0",
-  "version": "0.7.25",
-  "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电机降噪只校准三根塔柱，挤出机保持步进静音\n- MCU 与 0.7.24 相同，仍要在面板里确认刷写"
+  "version": "0.7.26",
+  "notes": "panel 0.7.26 / stack 2026.11.25.31 / mcu mcu-20261129\n- 面板启动脚本固定为 Unix 换行，更新后可以进入系统"
 }
