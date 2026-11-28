@@ -14,7 +14,7 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
     },
     {
       "id": "platform-plat-2026.11.24.4",
@@ -27,35 +27,35 @@
       "requires_idle": true,
       "auto": true,
       "restart": "reboot",
-      "notes": "panel 0.7.19 / stack 2026.11.25.25\n- 回零更静：先套 StealthChop，归位 14/3/15 避开噪音禁区\n- 塔柱细分 64（插值开，口语约 12800）；挤出 32\n- Autotune：PWM 目标 30kHz，关闭 CoolStep，降低斩波硬边"
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
     },
     {
-      "id": "stack-2026.11.25.31",
+      "id": "stack-2026.11.28.1",
       "kind": "stack",
-      "version": "2026.11.25.31",
-      "url": "packages/stack-2026.11.25.31.zip",
-      "sha256": "78a126efe93443cad1398600d87c970bfb26d4507537f0ef8287c3e58c5bc486",
-      "size": 48265,
+      "version": "2026.11.28.1",
+      "url": "packages/stack-2026.11.28.1.zip",
+      "sha256": "8fa049fa5260265c8dcf7a830d88e0ecd45ea075fbc3403ff4744bf24200dc43",
+      "size": 6117263,
       "min_free_mb": 400,
       "requires_idle": true,
       "auto": true,
       "restart": "klipper",
-      "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电机降噪只校准三根塔柱，挤出机保持步进静音\n- MCU 与 0.7.24 相同，仍要在面板里确认刷写",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）",
       "printer_cfg_replace": false,
       "printer_cfg_merge": true
     },
     {
-      "id": "panel-0.7.26",
+      "id": "panel-0.7.28",
       "kind": "panel",
-      "version": "0.7.26",
-      "url": "packages/panel-0.7.26.zip",
-      "sha256": "6a0b5633e7bb20d9340003c8fb814240950dfa79a76a9ea55c8772099baebdef",
-      "size": 2419175,
+      "version": "0.7.28",
+      "url": "packages/panel-0.7.28.zip",
+      "sha256": "2cf0ec574084bfef89dc32ff6ef77908126ab22e2815fe24d24ce238c14c16d4",
+      "size": 5006581,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.7.26 / stack 2026.11.25.31 / mcu mcu-20261129\n- 面板启动脚本固定为 Unix 换行，更新后可以进入系统",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
@@ -66,21 +66,21 @@
       ]
     },
     {
-      "id": "mcu-20261129",
+      "id": "mcu-20261128r",
       "kind": "mcu",
-      "version": "mcu-20261129",
-      "url": "packages/mcu-20261129.tar.gz",
-      "sha256": "f6d3b2bfe6dd910ec0cbbec9595a3fc02912d8bc50effcd274609d1fecb0dee6",
-      "size": 33341,
+      "version": "mcu-20261128r",
+      "url": "packages/mcu-20261128r.tar.gz",
+      "sha256": "03a106719bd4520343046830d4f73ae72d50b6475ec1d7ac3a6fb09d0da069b0",
+      "size": 32037,
       "min_free_mb": 20,
       "requires_idle": true,
       "auto": false,
       "restart": "mcu_flash",
-      "notes": "panel 0.7.25 / stack 2026.11.25.31 / mcu mcu-20261129\n- 电流谐波加在幅值上，含 8 次；只校准三根塔柱\n- 三台塔柱同一拍更新，并按实测选速度超前\n- MCU 要在面板里确认刷写，刷坏需要 ST-Link"
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
     }
   ],
-  "published_at": "2026-11-25T13:16:34Z",
+  "published_at": "2026-11-28T11:24:16Z",
   "min_panel": "0.5.0",
-  "version": "0.7.26",
-  "notes": "panel 0.7.26 / stack 2026.11.25.31 / mcu mcu-20261129\n- 面板启动脚本固定为 Unix 换行，更新后可以进入系统"
+  "version": "0.7.28",
+  "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
 }

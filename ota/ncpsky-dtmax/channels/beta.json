@@ -3,41 +3,84 @@
   "firmware_target": "FLSun T1 Max",
   "packages": [
     {
-      "id": "panel-0.5.2",
+      "id": "system-sys-2026.11.24.3",
+      "kind": "system",
+      "version": "sys-2026.11.24.3",
+      "url": "packages/system-sys-2026.11.24.3.tar.gz",
+      "sha256": "acd8ad3f3842fb6300a3ae2fd3f7b52612ce1975b4a4515ee49dcddd8e53e579",
+      "size": 542,
+      "min_free_mb": 300,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "reboot",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
+    },
+    {
+      "id": "platform-plat-2026.11.24.4",
+      "kind": "platform",
+      "version": "plat-2026.11.24.4",
+      "url": "packages/platform-plat-2026.11.24.4.tar.gz",
+      "sha256": "b21f98f8c7bec9d4d1b2f0285bdbbc1550dfc04d20207ef1a639cccb3da2d701",
+      "size": 768,
+      "min_free_mb": 200,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "reboot",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
+    },
+    {
+      "id": "stack-2026.11.28.1",
+      "kind": "stack",
+      "version": "2026.11.28.1",
+      "url": "packages/stack-2026.11.28.1.zip",
+      "sha256": "8fa049fa5260265c8dcf7a830d88e0ecd45ea075fbc3403ff4744bf24200dc43",
+      "size": 6117263,
+      "min_free_mb": 400,
+      "requires_idle": true,
+      "auto": true,
+      "restart": "klipper",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）",
+      "printer_cfg_replace": false,
+      "printer_cfg_merge": true
+    },
+    {
+      "id": "panel-0.7.28",
       "kind": "panel",
-      "version": "0.5.2",
-      "url": "packages/panel-0.5.2.zip",
-      "sha256": "4129ce1bf0e1c46d77cd98c9f9d3002cd6935ac38c76e979eef04c63cd74a3d9",
-      "size": 2223511,
+      "version": "0.7.28",
+      "url": "packages/panel-0.7.28.zip",
+      "sha256": "2cf0ec574084bfef89dc32ff6ef77908126ab22e2815fe24d24ce238c14c16d4",
+      "size": 5006581,
       "min_free_mb": 80,
       "requires_idle": true,
       "auto": true,
       "restart": "panel",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）",
       "persistent_globs": [
         "settings.json",
         "ota/config.json",
         "ota/backup/**",
         "ota/versions.json",
-        "ota/history.json"
+        "ota/history.json",
+        "ota/persist_profile.json"
       ]
     },
     {
-      "id": "stack-2026.11.24.2",
-      "kind": "stack",
-      "version": "2026.11.24.2",
-      "url": "packages/stack-2026.11.24.2.zip",
-      "sha256": "b64e1dcc595714ba8b4ec4d0f540b707157b2107f1f707709a1595abdaa17bdb",
-      "size": 3588465,
-      "min_free_mb": 400,
+      "id": "mcu-20261128r",
+      "kind": "mcu",
+      "version": "mcu-20261128r",
+      "url": "packages/mcu-20261128r.tar.gz",
+      "sha256": "03a106719bd4520343046830d4f73ae72d50b6475ec1d7ac3a6fb09d0da069b0",
+      "size": 32037,
+      "min_free_mb": 20,
       "requires_idle": true,
-      "auto": true,
-      "restart": "klipper",
-      "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
+      "auto": false,
+      "restart": "mcu_flash",
+      "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）"
     }
   ],
   "channel": "beta",
-  "published_at": "2026-11-24T12:39:42Z",
+  "published_at": "2026-11-28T11:24:16Z",
   "min_panel": "0.5.0",
-  "notes": "panel 0.5.2 / stack 2026.11.24.2\n- 更新体验：稳定/测试/开发三通道 + 检查更新；开机自动检查并弹窗\n- 整包更新，不展示分包；下载安装完成后自动重启\n- 重启后清理更新缓存；保留 Wi‑Fi、代理与打印记录"
+  "notes": "panel 0.7.28 / stack 2026.11.28.1 / mcu mcu-20261128r\n- 客户版：去掉 MSLUT / 遗留电机宏 / START_PRINT 空 APPLY_NOISE_MAP\n- 校准文案改为 StealthChop + ADXL；默认通道 stable\n- 床网/三角精度：9x9、探针 5 次、XY 120\n- MCU 无 XDIRECT（ADXL 钩子保留）",
+  "version": "0.7.28"
 }
